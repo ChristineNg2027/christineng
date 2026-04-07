@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viva · Christine Ng</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-name">Christine Ng</a>
+    <div class="nav-links">
+      <a href="../index.html#about">about</a>
+      <a href="../index.html#projects">projects</a>
+      <a href="../index.html#research">research</a>
+      <a href="../index.html#travels">travels</a>
+      <a href="../index.html#piano">piano</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="project-detail">
+
+      <a href="../index.html#projects" class="back-link">← back to projects</a>
+
+      <div class="project-detail-header">
+        <div class="project-detail-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="2"/>
+            <path d="m2 7 10 7 10-7"/>
+          </svg>
+        </div>
+        <div>
+          <h1 class="project-detail-title">Viva</h1>
+          <div class="project-tags">
+            <span class="project-tag">Web App</span>
+            <span class="project-tag">React</span>
+            <span class="project-tag">Firebase</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-detail-body">
+        <p>Viva is a web platform for creating and sharing beautiful digital event invitations. The idea was simple: sending an invitation should feel as special as the event itself.</p>
+        <p>Users can design custom invitations, share them with a link, and collect RSVPs — all without needing to print a thing. It was a fun project to build end-to-end, from designing the UI to handling real-time data with Firebase.</p>
+      </div>
+
+      <a href="https://viva-invite.web.app/" target="_blank" rel="noopener noreferrer" class="live-link">
+        View Live Site ↗
+      </a>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Christine Ng &middot; made with curiosity</p>
+  </footer>
+
+  <script>
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 10);
+    }, { passive: true });
+  </script>
+
+</body>
+</html>

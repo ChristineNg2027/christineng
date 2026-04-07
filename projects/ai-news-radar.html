@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Radar · Christine Ng</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-name">Christine Ng</a>
+    <div class="nav-links">
+      <a href="../index.html#about">about</a>
+      <a href="../index.html#projects">projects</a>
+      <a href="../index.html#research">research</a>
+      <a href="../index.html#travels">travels</a>
+      <a href="../index.html#piano">piano</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="project-detail">
+
+      <a href="../index.html#projects" class="back-link">← back to projects</a>
+
+      <div class="project-detail-header">
+        <div class="project-detail-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="2"/>
+            <path d="M6.34 17.66a8 8 0 0 1 0-11.31"/>
+            <path d="M17.66 6.34a8 8 0 0 1 0 11.31"/>
+            <path d="M3.51 20.49a12 12 0 0 1 0-16.97"/>
+            <path d="M20.49 3.51a12 12 0 0 1 0 16.97"/>
+          </svg>
+        </div>
+        <div>
+          <h1 class="project-detail-title">AI News Radar</h1>
+          <div class="project-tags">
+            <span class="project-tag">AI</span>
+            <span class="project-tag">NLP</span>
+            <span class="project-tag">Ongoing</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-detail-body">
+        <p>AI News Radar is an ongoing project to build an AI-powered news aggregator — one that doesn't just collect headlines, but actually surfaces what's worth paying attention to.</p>
+        <p>The idea is to cut through the noise: using language models to cluster, rank, and contextualize stories so you spend less time scrolling and more time understanding. Still actively building this one.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Christine Ng &middot; made with curiosity</p>
+  </footer>
+
+  <script>
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 10);
+    }, { passive: true });
+  </script>
+
+</body>
+</html>

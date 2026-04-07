@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christine Ng</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="nav-name">Christine Ng</a>
+    <div class="nav-links">
+      <a href="#about">about</a>
+      <a href="#projects">projects</a>
+      <a href="#research">research</a>
+      <a href="#travels">travels</a>
+      <a href="#piano">piano</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ── HERO ── -->
+    <section id="hero">
+      <div class="hero-content">
+        <h1>hi, I'm Christine.</h1>
+        <p class="hero-tagline">builder &middot; researcher &middot; explorer &middot; music lover</p>
+        <div class="hero-meta">
+          <span>Computer Science &middot; University of Washington</span>
+          <span class="aws-badge">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+            Incoming SDE Intern @ AWS
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ABOUT ── -->
+    <section id="about">
+      <div class="container fade-in">
+        <p class="section-label">about</p>
+        <div class="about-layout">
+        <div class="about-body">
+          <p>I'm a computer science student who finds real joy in building things — algorithms, web apps, research tools, anything that solves a problem or makes something work a little better than before.</p>
+          <p>I don't have it all figured out. But I love the process: sitting with something unfamiliar, slowly understanding it, and finding a way through. This site is less of a portfolio and more of a window into what I've been working on and thinking about lately.</p>
+          <p>Glad you're here for any part of it.</p>
+          <a href="https://www.linkedin.com/in/christineng2027/" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            LinkedIn ↗
+          </a>
+        </div>
+
+        <img src="images/me.jpg" alt="Christine Ng" class="about-photo">
+
+        </div><!-- end .about-layout -->
+      </div>
+    </section>
+
+    <!-- ── PROJECTS ── -->
+    <section id="projects">
+      <div class="container fade-in">
+        <p class="section-label">projects</p>
+        <p class="section-intro">here's what I've been building.</p>
+        <div class="projects-grid">
+
+          <!-- Viva -->
+          <a href="projects/viva.html" class="project-card">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="m2 7 10 7 10-7"/>
+              </svg>
+            </div>
+            <span class="project-card-name">Viva</span>
+            <p class="project-card-desc">A web platform for creating and sharing digital event invitations seamlessly.</p>
+            <span class="card-arrow">↗</span>
+          </a>
+
+          <!-- BrightenConstruction -->
+          <a href="projects/brighten-construction.html" class="project-card">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-5h6v5"/>
+                <path d="M9 9h.01M15 9h.01M9 13h.01M15 13h.01"/>
+              </svg>
+            </div>
+            <span class="project-card-name">BrightenConstruction</span>
+            <p class="project-card-desc">Empowering local construction businesses to connect with clients and grow.</p>
+            <span class="card-arrow">↗</span>
+          </a>
+
+          <!-- Map Prefetcher -->
+          <a href="projects/map-prefetcher.html" class="project-card">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/>
+                <line x1="9" y1="3" x2="9" y2="18"/>
+                <line x1="15" y1="6" x2="15" y2="21"/>
+              </svg>
+            </div>
+            <span class="project-card-name">Map Prefetcher</span>
+            <p class="project-card-desc"> Using ML to prefetch map tiles, reducing latency and smoothing map interactions.</p>
+            <span class="card-arrow">↗</span>
+          </a>
+
+          <!-- Smart Plant -->
+          <a href="projects/smart-plant.html" class="project-card">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22V12"/>
+                <path d="M12 12C12 7 17 3 21 3c0 5-3 9-9 9"/>
+                <path d="M12 12C12 7 7 3 3 3c0 5 3 9 9 9"/>
+              </svg>
+            </div>
+            <span class="project-card-name">Smart Plant</span>
+            <p class="project-card-desc">Uses AI to detect a plant's "emotion" and recommend the right care — with an LCD to show its mood.</p>
+            <span class="card-arrow">↗</span>
+          </a>
+
+          <!-- AI News Radar -->
+          <a href="projects/ai-news-radar.html" class="project-card">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="2"/>
+                <path d="M6.34 17.66a8 8 0 0 1 0-11.31"/>
+                <path d="M17.66 6.34a8 8 0 0 1 0 11.31"/>
+                <path d="M3.51 20.49a12 12 0 0 1 0-16.97"/>
+                <path d="M20.49 3.51a12 12 0 0 1 0 16.97"/>
+              </svg>
+            </div>
+            <span class="project-card-name">AI News Radar</span>
+            <p class="project-card-desc">An AI-powered news aggregator that tracks and surfaces relevant stories in real time.</p>
+            <span class="tag ongoing">ongoing</span>
+            <span class="card-arrow">↗</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── RESEARCH ── -->
+    <section id="research">
+      <div class="container fade-in">
+        <p class="section-label">research</p>
+        <p class="section-intro">a couple of labs I've had the privilege of working with.</p>
+        <div class="research-items">
+
+          <div class="research-item">
+            <p class="research-title">Undergraduate Researcher &middot; UW Programmable Matter Lab</p>
+            <div class="research-meta">
+              <span>Advisor: Prof. Martin Nisser</span>
+              <span>June 2025 &ndash; Present</span>
+              <span>Seattle, WA</span>
+            </div>
+            <ul class="research-bullets">
+              <li>Developed a real-time collision detection algorithm for wire&ndash;wire and wire&ndash;machine interactions, improving fabrication safety and reliability.</li>
+              <li>Leveraged the Blender Python API (bpy, bmesh, mathutils) to integrate geometric modeling, animation, and UI components into a fabrication interface.</li>
+            </ul>
+          </div>
+
+          <div class="research-item">
+            <p class="research-title">Undergraduate Software Researcher &middot; UW Sensors, Energy and Automation Lab (SEAL)</p>
+            <div class="research-meta">
+              <span>Advisor: Prof. Alexander V. Mamishev</span>
+              <span>Dec 2024 &ndash; June 2025</span>
+              <span>Seattle, WA</span>
+            </div>
+            <ul class="research-bullets">
+              <li>Designed and optimized Python-based spectrogram error detection algorithms using NumPy and SciPy, improving detection accuracy and computational efficiency for real-time signal processing.</li>
+              <li>Enhanced a software pipeline for meteor detection by refining FFT-based spectrogram analysis, enabling faster and more reliable real-time data analysis.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TRAVELS ── -->
+    <section id="travels">
+      <div class="container fade-in">
+        <p class="section-label">travels</p>
+        <p class="travels-intro">some places I've been lucky enough to visit. More photos coming soon.</p>
+        <div class="travel-grid">
+          <div class="travel-photo">
+            <img src="images/sd.jpeg" alt="San Diego, US">
+          </div>
+
+          <div class="travel-photo">
+            <img src="images/miami.jpeg" alt="Miami, US">
+          </div>
+
+            <div class="travel-photo">
+            <img src="images/miami_aqua.jpeg" alt="Miami, US">
+          </div>
+
+
+          <div class="travel-photo">
+            <img src="images/banff.jpeg" alt="Banff, Canada">
+          </div>
+
+          <div class="travel-photo">
+            <img src="images/maldive.jpg" alt="Maldive">
+          </div>
+
+          <div class="travel-photo">
+            <img src="images/seattle.jpeg" alt="Seattle, US">
+          </div>
+
+          <!-- <div class="travel-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+              <circle cx="12" cy="13" r="4"/>
+            </svg>
+            <span>photo coming soon</span>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PIANO ── -->
+    <section id="piano">
+      <div class="container fade-in">
+        <p class="section-label">piano</p>
+        <p class="piano-intro">I've been playing piano for a while now. it's one of the things I keep coming back to.</p>
+        <div class="piano-grid">
+
+          <div class="piano-card">
+            <div class="video-placeholder">
+              <div class="play-icon">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <span>video coming soon</span>
+            </div>
+            <p class="piano-card-label">piece title &middot; coming soon</p>
+          </div>
+          
+          <div class="piano-card">
+            <div class="video-placeholder">
+              <div class="play-icon">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <span>video coming soon</span>
+            </div>
+            <p class="piano-card-label">piece title &middot; coming soon</p>
+          </div>
+          <div class="piano-card">
+            <div class="video-placeholder">
+              <div class="play-icon">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <span>video coming soon</span>
+            </div>
+            <p class="piano-card-label">piece title &middot; coming soon</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Christine Ng &middot; made with curiosity</p>
+  </footer>
+
+  <script>
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 10);
+    }, { passive: true });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

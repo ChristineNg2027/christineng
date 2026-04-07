@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Plant · Christine Ng</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-name">Christine Ng</a>
+    <div class="nav-links">
+      <a href="../index.html#about">about</a>
+      <a href="../index.html#projects">projects</a>
+      <a href="../index.html#research">research</a>
+      <a href="../index.html#travels">travels</a>
+      <a href="../index.html#piano">piano</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="project-detail">
+
+      <a href="../index.html#projects" class="back-link">← back to projects</a>
+
+      <div class="project-detail-header">
+        <div class="project-detail-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22V12"/>
+            <path d="M12 12C12 7 17 3 21 3c0 5-3 9-9 9"/>
+            <path d="M12 12C12 7 7 3 3 3c0 5 3 9 9 9"/>
+          </svg>
+        </div>
+        <div>
+          <h1 class="project-detail-title">Smart Plant</h1>
+          <div class="project-tags">
+            <span class="project-tag">AI</span>
+            <span class="project-tag">Hardware</span>
+            <span class="project-tag">IoT</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-detail-body">
+        <p>Plants can't talk — but they're always communicating. Smart Plant uses AI to interpret a plant's physical signals and infer its current "emotional state": whether it's thriving, stressed, thirsty, or just right.</p>
+        <p>Based on that reading, the system recommends the right care at the right time — no more guessing whether to water, adjust the light, or just leave it alone. The next step is an LCD display that shows the plant's emotion directly, giving it a little personality of its own.</p>
+        <p>It started as a curiosity: what if we could actually listen to plants? This project is an attempt to find out.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Christine Ng &middot; made with curiosity</p>
+  </footer>
+
+  <script>
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 10);
+    }, { passive: true });
+  </script>
+
+</body>
+</html>

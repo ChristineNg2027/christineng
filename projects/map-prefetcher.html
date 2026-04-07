@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map Prefetcher · Christine Ng</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-name">Christine Ng</a>
+    <div class="nav-links">
+      <a href="../index.html#about">about</a>
+      <a href="../index.html#projects">projects</a>
+      <a href="../index.html#research">research</a>
+      <a href="../index.html#travels">travels</a>
+      <a href="../index.html#piano">piano</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="project-detail">
+
+      <a href="../index.html#projects" class="back-link">← back to projects</a>
+
+      <div class="project-detail-header">
+        <div class="project-detail-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/>
+            <line x1="9" y1="3" x2="9" y2="18"/>
+            <line x1="15" y1="6" x2="15" y2="21"/>
+          </svg>
+        </div>
+        <div>
+          <h1 class="project-detail-title">Map Prefetcher</h1>
+          <div class="project-tags">
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">Web Performance</span>
+            <span class="project-tag">Mapping</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-detail-body">
+        <p>Map Prefetcher is a utility that intelligently prefetches map tiles ahead of where a user is looking — reducing the blank-tile flicker that plagues map-heavy applications when you pan or zoom quickly.</p>
+        <p>The core idea: by predicting viewport movement and loading adjacent tiles in advance, you can give users a seamless experience that feels fast even on slower connections. A small performance win that makes a noticeable difference in day-to-day use.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Christine Ng &middot; made with curiosity</p>
+  </footer>
+
+  <script>
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 10);
+    }, { passive: true });
+  </script>
+
+</body>
+</html>
